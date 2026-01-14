@@ -245,9 +245,9 @@ body.dark .card-footer small {
     <!-- SCHEDULE START -->
     <section id="schedule" class="text-center p-5">
       <h1 class="fw-bold display-4 pb-3">Schedule</h1>
-
-      <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 g-4 justify-content-center">
-
+      <div
+        class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 g-4 justify-content-center"
+      >
         <div class="col">
           <div class="p-4 border rounded shadow-sm h-100">
             <i class="bi bi-book text-danger fs-1"></i>
@@ -255,7 +255,6 @@ body.dark .card-footer small {
             <p>Menambah wawasan setiap pagi sebelum beraktivitas.</p>
           </div>
         </div>
-
         <div class="col">
           <div class="p-4 border rounded shadow-sm h-100">
             <i class="bi bi-laptop text-danger fs-1"></i>
@@ -263,7 +262,6 @@ body.dark .card-footer small {
             <p>Mencatat setiap pengalaman harian di jurnal pribadi.</p>
           </div>
         </div>
-
         <div class="col">
           <div class="p-4 border rounded shadow-sm h-100">
             <i class="bi bi-people text-danger fs-1"></i>
@@ -271,7 +269,27 @@ body.dark .card-footer small {
             <p>Bertukar ide dengan teman dalam kelompok belajar.</p>
           </div>
         </div>
-
+        <div class="col">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <i class="bi bi-bicycle text-danger fs-1"></i>
+            <h5 class="mt-3">Olahraga</h5>
+            <p>Menjaga kesehatan dengan bersepeda sore hari.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <i class="bi bi-film text-danger fs-1"></i>
+            <h5 class="mt-3">Movie</h5>
+            <p>Menonton film yang bagus di bioskop.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <i class="bi bi-bag text-danger fs-1"></i>
+            <h5 class="mt-3">Belanja</h5>
+            <p>Membeli kebutuhan bulanan di supermarket.</p>
+          </div>
+        </div>
       </div>
     </section>
     <!-- SCHEDULE END -->
