@@ -197,18 +197,24 @@ body.dark .card-footer small {
         <div id="carouselExample" class="carousel slide">
           <div class="carousel-inner">
 
-            <div class="carousel-item active">
-              <img src="img/gambar perang al fatih.jpeg" class="d-block w-100" alt="..." />
-            </div>
+            <?php
+            $sql = "SELECT * FROM gallery ORDER BY tanggal DESC";
+            $hasil = $conn->query($sql);
+            $active = "active";
 
-            <div class="carousel-item">
-              <img src="img/khalid-pedang.jpg" class="d-block w-100" alt="..." />
-            </div>
-
-            <div class="carousel-item">
-              <img src="img/Shalahuddin-al-Ayyubi.jpg" class="d-block w-100" alt="..." />
-            </div>
-
+            while ($row = $hasil->fetch_assoc()) {
+            ?>
+              <div class="carousel-item <?= $active ?>">
+                <img 
+                  src="img/<?= $row['gambar'] ?>" 
+                  class="d-block w-100"
+                  alt="<?= htmlspecialchars($row['deskripsi']) ?>"
+                >
+              </div>
+            <?php
+              $active = ""; // hanya item pertama yg active
+            }
+            ?>
           </div>
 
           <button
